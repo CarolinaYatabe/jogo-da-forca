@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-de-fundo: #193441;
+    --branco: #D1DBBD;
+    --preto: #000000;
+    --cor-teclado: #3E606F;
+    --cor-botao: #91AA9D;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+}
+
+.tela{
+    background-color: var(--branco);
+    border-radius: 10px;
+    width: 90%;
+    height: 95%;
+    margin: 100px auto;
+    padding: 2%;
+}
+
+.tela__titulo {
+    text-align: center;
+}
+
+.button-novo-jogo {
+    padding: 1%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--cor-botao);
+    color: var(--preto);
+    transition: all 0.3s;
+}
+
+.tela__jogo{
+    display: flex;
+    gap: 100px;
+}
+
+
+.letras__direita{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.palavra {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+    font-size: 30px;
+}
+
+.letra {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-bottom: 3px solid var(--preto);
+    width: 30px;
+    text-align: center;
+}
+
+.teclado button{
+    margin: 1.5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-teclado);
+    color: var(--preto);
+}
+
+.como-jogar{
+    background-color: var(--cor-teclado);
+    width: 70%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 1.5%;
+}
+
+.como-jogar__instrucoes {
+    margin-bottom: 0;
+}
+
+.como-jogar__lista {
+    padding: 0;
+    margin: 15px;
+}
+
+.como-jogar__itens-lista {
+    padding: 0;
+    margin: 5px;
+}
+
+.button-novo-jogo:hover{
+    transform: scale(1.10);
+}
+
+.teclado button:hover{
+    background-color: var(--cor-botao);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da forca</title>
+</head>
+<body>
+    <div class="tela">
+        <div class="tela__titulo">
+            <h1>Jogo da forca</h1>
+            <button class="button-novo-jogo">Novo jogo</button>
+        </div>
+        <div class="tela__jogo">
+            
+            <div class="forca">
+                <img src="./assets/img0.svg" alt="forca">
+            </div>
+            <div class="letras-direita">
+                <div class="letras-palavra">
+                    <ul class="palavra">
+                        <!--tracinhos das palavras-->
+                    </ul>
+                </div>
+                <div class="dicas">
+                    
+                </div>
+                <div class="teclado">
+                    
+                </div>
+            </div>
+            <div class="como-jogar">
+                <h3 class="como-jogar__instrucoes">Instruções:</h3>
+                <ul class="como-jogar__lista">
+                    <li class="como-jogar__itens-lista">O objetivo do jogo da forca é adivinhar a palavra sorteada antes de completar o desenho da forca.</li>
+                    <li class="como-jogar__itens-lista">Tente adivinhar uma letra da palavra.</li>
+                    <li class="como-jogar__itens-lista">Se a letra estiver na palavra uma letra é adicionada. Caso contrário, um membro do boneco é desenhado na forca</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
