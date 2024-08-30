@@ -7,6 +7,7 @@ const img = document.querySelector("img") as HTMLImageElement
 const btnNovoJogo = document.querySelector(".button-novo-jogo") as HTMLElement
 let qtdErros: number
 let palavraSorteada: string
+const umSegundoEmMilisegundos: number = 1000
 
 btnNovoJogo.addEventListener('click', iniciar);
 
@@ -63,7 +64,7 @@ function perdeu(): void {
             exibirPalavraSorteada()
             iniciar()
         }
-    },50
+    },umSegundoEmMilisegundos
     )
 }
 
@@ -89,7 +90,7 @@ function ganhou(): void {
         setTimeout(() => {
             alert("Ganhou!")
             iniciar()
-        },50
+        },umSegundoEmMilisegundos
     )
     }
 }
